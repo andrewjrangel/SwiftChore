@@ -15,6 +15,8 @@
 		88F1DA801C51C3360080B6E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88F1DA7E1C51C3360080B6E7 /* LaunchScreen.storyboard */; };
 		88F1DA8B1C51C3360080B6E7 /* SwiftChoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DA8A1C51C3360080B6E7 /* SwiftChoreTests.swift */; };
 		88F1DA961C51C3360080B6E7 /* SwiftChoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DA951C51C3360080B6E7 /* SwiftChoreUITests.swift */; };
+		88F1DAA41C51F53B0080B6E7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DAA31C51F53B0080B6E7 /* Config.swift */; };
+		C6E9166AB6D4A3A6697F9070 /* Pods_SwiftChore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0182C5ABD1B7D08288BE1AE /* Pods_SwiftChore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		88F1DA911C51C3360080B6E7 /* SwiftChoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftChoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88F1DA951C51C3360080B6E7 /* SwiftChoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChoreUITests.swift; sourceTree = "<group>"; };
 		88F1DA971C51C3360080B6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88F1DAA31C51F53B0080B6E7 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		8D647AFDC11EA6AEA87ADFCB /* Pods-SwiftChore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChore/Pods-SwiftChore.debug.xcconfig"; sourceTree = "<group>"; };
+		C0182C5ABD1B7D08288BE1AE /* Pods_SwiftChore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE6BDD3EB87903D8036DD033 /* Pods-SwiftChore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChore.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChore/Pods-SwiftChore.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6E9166AB6D4A3A6697F9070 /* Pods_SwiftChore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,8 @@
 				88F1DA891C51C3360080B6E7 /* SwiftChoreTests */,
 				88F1DA941C51C3360080B6E7 /* SwiftChoreUITests */,
 				88F1DA701C51C3350080B6E7 /* Products */,
+				9E00FE70CF9789184F1810C9 /* Pods */,
+				E19CACBE3EF1CE94976C8B1F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +108,7 @@
 		88F1DA711C51C3360080B6E7 /* SwiftChore */ = {
 			isa = PBXGroup;
 			children = (
+				88F1DAA31C51F53B0080B6E7 /* Config.swift */,
 				88F1DA721C51C3360080B6E7 /* AppDelegate.swift */,
 				88F1DA741C51C3360080B6E7 /* ViewController.swift */,
 				88F1DA761C51C3360080B6E7 /* Main.storyboard */,
@@ -128,6 +138,23 @@
 			path = SwiftChoreUITests;
 			sourceTree = "<group>";
 		};
+		9E00FE70CF9789184F1810C9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8D647AFDC11EA6AEA87ADFCB /* Pods-SwiftChore.debug.xcconfig */,
+				FE6BDD3EB87903D8036DD033 /* Pods-SwiftChore.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E19CACBE3EF1CE94976C8B1F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0182C5ABD1B7D08288BE1AE /* Pods_SwiftChore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +162,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88F1DA9A1C51C3360080B6E7 /* Build configuration list for PBXNativeTarget "SwiftChore" */;
 			buildPhases = (
+				76917E687F568B1381E3A794 /* Check Pods Manifest.lock */,
 				88F1DA6B1C51C3350080B6E7 /* Sources */,
 				88F1DA6C1C51C3350080B6E7 /* Frameworks */,
 				88F1DA6D1C51C3350080B6E7 /* Resources */,
+				ED89D824ED00299CD332A95F /* Embed Pods Frameworks */,
+				C0FEB7F318AAE43A62E879B7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -254,12 +284,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		76917E687F568B1381E3A794 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C0FEB7F318AAE43A62E879B7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftChore/Pods-SwiftChore-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED89D824ED00299CD332A95F /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftChore/Pods-SwiftChore-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		88F1DA6B1C51C3350080B6E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				88F1DA7B1C51C3360080B6E7 /* SwiftChore.xcdatamodeld in Sources */,
+				88F1DAA41C51F53B0080B6E7 /* Config.swift in Sources */,
 				88F1DA751C51C3360080B6E7 /* ViewController.swift in Sources */,
 				88F1DA731C51C3360080B6E7 /* AppDelegate.swift in Sources */,
 			);
@@ -401,6 +480,7 @@
 		};
 		88F1DA9B1C51C3360080B6E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D647AFDC11EA6AEA87ADFCB /* Pods-SwiftChore.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftChore/Info.plist;
@@ -412,6 +492,7 @@
 		};
 		88F1DA9C1C51C3360080B6E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6BDD3EB87903D8036DD033 /* Pods-SwiftChore.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftChore/Info.plist;
@@ -488,6 +569,7 @@
 				88F1DA9C1C51C3360080B6E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88F1DA9D1C51C3360080B6E7 /* Build configuration list for PBXNativeTarget "SwiftChoreTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +578,7 @@
 				88F1DA9F1C51C3360080B6E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88F1DAA01C51C3360080B6E7 /* Build configuration list for PBXNativeTarget "SwiftChoreUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +587,7 @@
 				88F1DAA21C51C3360080B6E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
