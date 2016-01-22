@@ -16,6 +16,9 @@
 		88F1DA8B1C51C3360080B6E7 /* SwiftChoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DA8A1C51C3360080B6E7 /* SwiftChoreTests.swift */; };
 		88F1DA961C51C3360080B6E7 /* SwiftChoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DA951C51C3360080B6E7 /* SwiftChoreUITests.swift */; };
 		88F1DAA41C51F53B0080B6E7 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DAA31C51F53B0080B6E7 /* Config.swift */; };
+		88F1DAA81C51F86E0080B6E7 /* Chore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DAA71C51F86E0080B6E7 /* Chore.swift */; };
+		88F1DAAA1C51F9990080B6E7 /* ChoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DAA91C51F9990080B6E7 /* ChoreAPI.swift */; };
+		88F1DAAC1C51FABF0080B6E7 /* UserAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F1DAAB1C51FABF0080B6E7 /* UserAPI.swift */; };
 		C6E9166AB6D4A3A6697F9070 /* Pods_SwiftChore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0182C5ABD1B7D08288BE1AE /* Pods_SwiftChore.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,9 @@
 		88F1DA951C51C3360080B6E7 /* SwiftChoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChoreUITests.swift; sourceTree = "<group>"; };
 		88F1DA971C51C3360080B6E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88F1DAA31C51F53B0080B6E7 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		88F1DAA71C51F86E0080B6E7 /* Chore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chore.swift; sourceTree = "<group>"; };
+		88F1DAA91C51F9990080B6E7 /* ChoreAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChoreAPI.swift; sourceTree = "<group>"; };
+		88F1DAAB1C51FABF0080B6E7 /* UserAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAPI.swift; sourceTree = "<group>"; };
 		8D647AFDC11EA6AEA87ADFCB /* Pods-SwiftChore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChore/Pods-SwiftChore.debug.xcconfig"; sourceTree = "<group>"; };
 		C0182C5ABD1B7D08288BE1AE /* Pods_SwiftChore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftChore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE6BDD3EB87903D8036DD033 /* Pods-SwiftChore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftChore.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftChore/Pods-SwiftChore.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				88F1DAA31C51F53B0080B6E7 /* Config.swift */,
+				88F1DAA61C51F8610080B6E7 /* Model */,
+				88F1DAA51C51F8580080B6E7 /* Network */,
 				88F1DA721C51C3360080B6E7 /* AppDelegate.swift */,
 				88F1DA741C51C3360080B6E7 /* ViewController.swift */,
 				88F1DA761C51C3360080B6E7 /* Main.storyboard */,
@@ -136,6 +144,23 @@
 				88F1DA971C51C3360080B6E7 /* Info.plist */,
 			);
 			path = SwiftChoreUITests;
+			sourceTree = "<group>";
+		};
+		88F1DAA51C51F8580080B6E7 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				88F1DAA91C51F9990080B6E7 /* ChoreAPI.swift */,
+				88F1DAAB1C51FABF0080B6E7 /* UserAPI.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		88F1DAA61C51F8610080B6E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				88F1DAA71C51F86E0080B6E7 /* Chore.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		9E00FE70CF9789184F1810C9 /* Pods */ = {
@@ -337,10 +362,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88F1DAAA1C51F9990080B6E7 /* ChoreAPI.swift in Sources */,
 				88F1DA7B1C51C3360080B6E7 /* SwiftChore.xcdatamodeld in Sources */,
 				88F1DAA41C51F53B0080B6E7 /* Config.swift in Sources */,
+				88F1DAA81C51F86E0080B6E7 /* Chore.swift in Sources */,
 				88F1DA751C51C3360080B6E7 /* ViewController.swift in Sources */,
 				88F1DA731C51C3360080B6E7 /* AppDelegate.swift in Sources */,
+				88F1DAAC1C51FABF0080B6E7 /* UserAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
